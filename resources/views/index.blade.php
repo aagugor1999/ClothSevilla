@@ -230,7 +230,7 @@
               </div>
               <div class="category-banner__item-content">
                 <h3 class="mb-0">Blazers</h3>
-                <a href="#" class="btn-link default-underline text-uppercase fw-medium">Shop Now</a>
+                <a href="{{route('shop.index')}}" class="btn-link default-underline text-uppercase fw-medium">Shop Now</a>
               </div>
             </div>
           </div>
@@ -243,7 +243,7 @@
               </div>
               <div class="category-banner__item-content">
                 <h3 class="mb-0">Sportswear</h3>
-                <a href="#" class="btn-link default-underline text-uppercase fw-medium">Shop Now</a>
+                <a href="{{route('shop.index')}}" class="btn-link default-underline text-uppercase fw-medium">Shop Now</a>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@
 
       <div class="mb-3 mb-xl-5 pt-1 pb-4"></div>
 
-      <section class="products-grid container">
+      {{-- <section class="products-grid container">
         <h2 class="section-title text-center mb-3 pb-xl-3 mb-xl-4">Featured Products</h2>
 
         <div class="row">
@@ -553,7 +553,7 @@
         <div class="text-center mt-2">
           <a class="btn-link btn-link_lg default-underline text-uppercase fw-medium" href="#">Load More</a>
         </div>
-      </section>
+      </section> --}}
     </div>
 
     <div class="mb-3 mb-xl-5 pt-1 pb-4"></div>

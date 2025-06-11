@@ -72,7 +72,7 @@
                                 </li>
                                 <li class="menu-item has-children">
                                     <a href="javascript:void(0);" class="menu-item-button">
-                                        <div class="icon"><i class="icon-briefcase"></i></div>
+                                        <div class="icon"><i class="icon-star"></i></div>
                                         <div class="text">Brand</div>
                                     </a>
                                     <ul class="sub-menu">
@@ -118,11 +118,11 @@
                                                 <div class="text">Orders</div>
                                             </a>
                                         </li>
-                                        <li class="sub-menu-item">
+                                        {{-- <li class="sub-menu-item">
                                             <a href="order-tracking.html" class="">
                                                 <div class="text">Order tracking</div>
                                             </a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </li>
                                 <li class="menu-item">
@@ -144,17 +144,17 @@
                                     </a>
                                 </li>
 
-                                <li class="menu-item">
-                                    <a href="users.html" class="">
+                                {{-- <li class="menu-item">
+                                    <a href="#" class="">
                                         <div class="icon"><i class="icon-user"></i></div>
                                         <div class="text">User</div>
                                     </a>
-                                </li>
+                                </li> --}}
 
                                 <li class="menu-item">
-                                    <a href="settings.html" class="">
-                                        <div class="icon"><i class="icon-settings"></i></div>
-                                        <div class="text">Settings</div>
+                                    <a href="{{route('home.index')}}" class="">
+                                        <div class="icon"><i class="icon-home"></i></div>
+                                        <div class="text">Home</div>
                                     </a>
                                 </li>
 
@@ -176,7 +176,7 @@
                     <div class="header-dashboard">
                         <div class="wrap">
                             <div class="header-left">
-                                <a href="index-2.html">
+                                <a href="{{route('admin.index')}}">
                                     <img class="" id="logo_header_mobile" alt="" src="images/logo/logo.png"
                                         data-light="images/logo/logo.png" data-dark="images/logo/logo.png"
                                         data-width="154px" data-height="52px" data-retina="images/logo/logo.png">
@@ -204,7 +204,7 @@
                             </div>
                             <div class="header-grid">
 
-                                <div class="popup-wrap message type-header">
+                                {{-- <div class="popup-wrap message type-header">
                                     <div class="dropdown">
                                         <button class="btn btn-secondary dropdown-toggle" type="button"
                                             id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -269,7 +269,7 @@
                                             <li><a href="#" class="tf-button w-full">View all</a></li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> --}}
 
 
 
@@ -296,14 +296,14 @@
                                         <ul class="dropdown-menu dropdown-menu-end has-content"
                                             aria-labelledby="dropdownMenuButton3">
                                             <li>
-                                                <a href="#" class="user-item">
+                                                <a href="{{ route('user.index') }}" class="user-item">
                                                     <div class="icon">
                                                         <i class="icon-user"></i>
                                                     </div>
                                                     <div class="body-title-2">Account</div>
                                                 </a>
                                             </li>
-                                            <li>
+                                            {{-- <li>
                                                 <a href="#" class="user-item">
                                                     <div class="icon">
                                                         <i class="icon-mail"></i>
@@ -319,17 +319,17 @@
                                                     </div>
                                                     <div class="body-title-2">Taskboard</div>
                                                 </a>
-                                            </li>
+                                            </li> --}}
                                             <li>
-                                                <a href="#" class="user-item">
+                                                <a href="{{ route('home.index') }}" class="user-item">
                                                     <div class="icon">
-                                                        <i class="icon-headphones"></i>
+                                                        <i class="icon-home"></i>
                                                     </div>
-                                                    <div class="body-title-2">Support</div>
+                                                    <div class="body-title-2">Home</div>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="login.html" class="user-item">
+                                                <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="user-item">
                                                     <div class="icon">
                                                         <i class="icon-log-out"></i>
                                                     </div>

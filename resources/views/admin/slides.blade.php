@@ -21,7 +21,7 @@
 
             <div class="wg-box">
                 <div class="flex items-center justify-between gap10 flex-wrap">
-                    <div class="wg-filter flex-grow">
+                    {{-- <div class="wg-filter flex-grow">
                         <form class="form-search">
                             <fieldset class="name">
                                 <input type="text" placeholder="Search here..." class="" name="name"
@@ -31,7 +31,8 @@
                                 <button class="" type="submit"><i class="icon-search"></i></button>
                             </div>
                         </form>
-                    </div>
+                    </div> --}}
+                    <div></div>
                     <a class="tf-button style-1 w208" href="{{route('admin.slide.add')}}"><i class="icon-plus"></i>Add new</a>
                 </div>
                 <div class="wg-table table-all-user">
