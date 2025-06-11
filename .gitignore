@@ -18,9 +18,9 @@ yarn-error.log
 /.idea
 /.vscode
 
-# Ignorar todo en public/uploads y subcarpetas
+# Ignorar todos los archivos dentro de public/uploads y subcarpetas
 /public/uploads/**
 
-# Pero permitir las carpetas
+# Pero permitir las carpetas (para que se suban con .gitkeep)
 !public/uploads/
 !public/uploads/**/
