@@ -17,3 +17,10 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# Ignorar todo en public/uploads y subcarpetas
+/public/uploads/**
+
+# Pero permitir las carpetas
+!public/uploads/
+!public/uploads/**/

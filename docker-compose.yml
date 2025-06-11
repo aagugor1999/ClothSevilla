@@ -9,7 +9,7 @@ services:
         APACHE_DOCUMENT_ROOT: /var/www/html/public
     container_name: laravel_app
     ports:
-      - "8000:80"
+      - "7000:80"
     volumes:
       - .:/var/www/html
     depends_on:

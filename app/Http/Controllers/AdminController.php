@@ -30,7 +30,7 @@ class AdminController extends Controller
                                     sum(if(status='ordered',1,0)) as TotalOrdered,
                                     sum(if(status='delivered',1,0)) as TotalDelivered,
                                     sum(if(status='canceled',1,0)) as TotalCanceled
-                                    From Orders
+                                    From orders
                                     ");
         $monthlyDatas = DB::select("SELECT M.id as MonthNo, M.name as MonthName,
                                     IFNULL(D.TotalAmount,0)  as TotalAmount, 
@@ -43,7 +43,7 @@ class AdminController extends Controller
                                     sum(if(status='ordered',total,0)) as TotalOrderedAmount,
                                     sum(if(status='delivered',total,0)) as TotalDeliveredAmount,
                                     sum(if(status='canceled',total,0)) as TotalCanceledAmount
-                                    From Orders where YEAR(created_at)=YEAR(NOW()) GROUP BY YEAR(created_at), MONTH(created_at), DATE_FORMAT(created_at, '%b')
+                                    From orders where YEAR(created_at)=YEAR(NOW()) GROUP BY YEAR(created_at), MONTH(created_at), DATE_FORMAT(created_at, '%b')
                                     Order By MONTH(created_at)) D On D.MonthNo=M.id ");
         
         $AmountM = implode(',', collect($monthlyDatas)->pluck('TotalAmount')->toArray());
